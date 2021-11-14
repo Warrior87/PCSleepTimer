@@ -10,6 +10,10 @@ void setup() {
   digitalWrite(VCCPin, HIGH);
   pinMode(dataPin, INPUT_PULLUP);
   Keyboard.begin();
+  delay(10000);
+  Keyboard.press(KEY_F1);
+  delay(100);
+  Keyboard.releaseAll();
 }
 
 void loop() {
